@@ -13,6 +13,7 @@
 
 	<properties>
 		<spring-version>4.1.6.RELEASE</spring-version>
+		<jackson.version>2.7.5</jackson.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -43,6 +44,18 @@
 			<version>3.1.0</version>
 			<scope>provided</scope>
 		</dependency>
+		<!--json 序列化包依赖-->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.dataformat</groupId>
+			<artifactId>jackson-dataformat-xml</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<!--json 序列化包依赖-->
 	</dependencies>
 	<build>
 		<finalName>test-web</finalName>
