@@ -6,6 +6,6 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("com.lh.spring.test.web.controller")
+@ComponentScan(basePackageClasses = {com.lh.spring.test.application.Components.class, com.lh.spring.test.web.controller.Components.class})
 public class DispatcherServlet {
 }

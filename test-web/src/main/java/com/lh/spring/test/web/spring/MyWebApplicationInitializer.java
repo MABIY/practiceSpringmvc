@@ -9,7 +9,7 @@ public class MyWebApplicationInitializer extends AbstractAnnotationConfigDispatc
     }
 
     protected Class<?>[] getRootConfigClasses() {
-        return new Class[0];
+        return new Class[]{RootAppInitializer.class};
     }
 
     protected Class<?>[] getServletConfigClasses() {
