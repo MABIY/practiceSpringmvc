@@ -13,6 +13,6 @@ public class MyWebApplicationInitializer extends AbstractAnnotationConfigDispatc
     }
 
     protected Class<?>[] getServletConfigClasses() {
-        return new Class[]{DispatcherServlet.class};
+        return new Class[]{WebConfig.class};
     }
 }
