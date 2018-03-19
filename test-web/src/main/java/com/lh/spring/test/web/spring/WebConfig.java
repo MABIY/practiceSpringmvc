@@ -14,14 +14,14 @@ import org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver;
 @EnableWebMvc
 @ComponentScan(basePackageClasses = {com.lh.spring.test.application.Components.class, com.lh.spring.test.web.controller.Components.class})
 public class WebConfig {
-    @Bean
-    public ViewResolver internalResourceViewResolver() {
-        InternalResourceViewResolver bean = new InternalResourceViewResolver();
-        bean.setViewClass(JstlView.class);
-        bean.setPrefix("/jsp/");
-        bean.setSuffix(".jsp");
-        return bean;
-    }
+    //@Bean
+    //public ViewResolver internalResourceViewResolver() {
+    //    InternalResourceViewResolver bean = new InternalResourceViewResolver();
+    //    bean.setViewClass(JstlView.class);
+    //    bean.setPrefix("/jsp/");
+    //    bean.setSuffix(".jsp");
+    //    return bean;
+    //}
 
     @Bean
     public FreeMarkerViewResolver freemarkerViewResolver() {
