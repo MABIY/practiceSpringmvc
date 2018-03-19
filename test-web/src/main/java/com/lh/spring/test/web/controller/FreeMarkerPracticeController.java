@@ -17,7 +17,7 @@ public class FreeMarkerPracticeController {
     public String greenMouse(@ModelAttribute("model1")ModelMap modelMap) {
         modelMap.addAttribute("user", "tt1");
         modelMap.addAttribute("latestProduct", new LatestProduct("products/greenmouse.html", "green mouse"));
-        return "welcome";
+        return "/ftl/welcome";
     }
 
 /*
