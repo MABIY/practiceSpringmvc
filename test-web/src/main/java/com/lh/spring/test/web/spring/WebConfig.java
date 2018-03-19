@@ -39,7 +39,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 
         // Define all possible view resolvers
         List<ViewResolver> resolvers = new ArrayList<ViewResolver>();
-        // chain 查找 不好识别固定的解析器
+        // @TODO chain 查找 不好识别固定的解析器
         resolvers.add(freemarkerViewResolver());
         resolvers.add(jspViewResolver());
         resolver.setViewResolvers(resolvers);
