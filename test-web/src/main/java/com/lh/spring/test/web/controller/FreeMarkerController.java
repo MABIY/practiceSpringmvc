@@ -18,17 +18,17 @@ public class FreeMarkerController {
 
     private static List<Car> carList = new ArrayList<>();
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String home(Locale locale, Model model) {
-        return "redirect:/cars";
-    }
-
-
     static {
         carList.add(new Car("Honda", "Civic"));
         carList.add(new Car("Toyota", "Camry"));
         carList.add(new Car("Nissan", "Altima"));
     }
+
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String home(Locale locale, Model model) {
+        return "redirect:/cars";
+    }
+
     @RequestMapping(value = "/cars", method = RequestMethod.GET)
     public String init(@ModelAttribute("model") ModelMap model) {
         model.addAttribute("carList", carList);
